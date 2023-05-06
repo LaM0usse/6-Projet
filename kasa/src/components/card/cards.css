@@ -1,0 +1,30 @@
+.cards {
+    background-color: #F6F6F6;
+    border-radius: 25px 25px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 50px;
+    padding: 50px;
+    margin-top: 40px;
+}
+
+.card-image {
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-image:hover {
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+.card-title {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    width: 340px;
+    /*color: white;*/
+}

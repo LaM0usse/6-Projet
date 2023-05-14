@@ -7,7 +7,7 @@ export default function App() {
     return(
         <>
         <Header />
-        <Banner />
+        <Banner URL="./image/banner1.png" text="Chez vous, partout et ailleurs" />
         <Cards />
         <Footer />
         </>

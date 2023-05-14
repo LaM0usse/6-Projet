@@ -9,22 +9,30 @@
     margin-top: 40px;
 }
 
+.card-logement {
+    position: relative;
+}
+
 .card-image {
     width: 340px;
     height: 340px;
     object-fit: cover;
     border-radius: 10px;
+    filter: brightness(90%)
 }
 
-.card-image:hover {
+.card-logement:hover {
     scale: 1.05;
     transition: 0.5s;
 }
 
 .card-title {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    color: white;
     font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 500;
-    width: 340px;
-    /*color: white;*/
+    width: 180px;
 }

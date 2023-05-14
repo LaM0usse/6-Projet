@@ -1,0 +1,38 @@
+.carousel {
+    position: relative;
+}
+
+.carousel-image {
+    width: 1240px;
+    height: 500px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.carousel-arrowleft {  
+    position: absolute;
+    left: 30px;
+    top: 200px;
+    color: white;
+    font-size: 85px;
+    cursor: pointer;
+    
+}
+
+.carousel-arrowright {
+    position: absolute;
+    right: 30px;
+    top: 200px;
+    color: white;
+    font-size: 85px;
+    cursor: pointer;
+}
+
+.carousel-count {
+    position: absolute;
+    left: 620px;
+    top: 440px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat';
+}

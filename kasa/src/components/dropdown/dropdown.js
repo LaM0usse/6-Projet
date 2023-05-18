@@ -6,12 +6,13 @@ function Dropdown(props) {
     const [open, setOpen] = useState(false)
     // Fonction du clic sur le bouton du déroulant
     const click = () => {
+        // document.getElementById("chevron").classList.add("rotate")
         setOpen(!open)
     }
 
     return(
         <div className="dropdown">
-            <button onClick={click}>{props.name}<i className={`fa-solid ${open ? 'fa-chevron-up' : 'fa-chevron-down'} rotate`}></i></button>
+            <button onClick={click}>{props.name}<i id="chevron" className={`fa-solid ${open ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i></button>
             {/* Contenu du déroulant s'il est ouvert */}
             {open && (
                 <div>

@@ -1,0 +1,100 @@
+.logement-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.logement-first-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.logement-title {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 36px;
+    color: #FF6060;
+    margin: 0;
+}
+
+.logement-location {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.logement-tags-section{
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.logement-tags {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #FF6060;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 35px;
+}
+
+
+.logement-second-section {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.logement-host {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logement-host-name {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+    margin: 0px;
+}
+
+.logement-host-picture {
+    width: 64px;
+    border-radius: 150px;
+}
+
+
+.stars {
+    font-size: 24px;
+    padding-left: 15px;
+}
+
+.red-stars {
+    color: #FF6060;
+}
+
+.grey-stars {
+    color: #E3E3E3;
+}
+
+
+
+.logement-dropdown-section {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.logement-dropdown {
+    width: 580px;
+}
+
+.logement-dropdown p {
+    display: flex;
+    flex-direction: column;
+}

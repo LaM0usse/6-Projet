@@ -24,11 +24,11 @@ export default function Carousel({ sliderImage }) {
       {/* Icône des flèches gauche et droite */}
       <i className="fa-solid fa-chevron-left carousel-arrowleft" onClick={previousSlide}></i>
       <i className="fa-solid fa-chevron-right carousel-arrowright" onClick={nextSlide}></i>
-      {/* Affichage du numéro de diapositive actuelle et totalSlide */}
+      {/* Affichage du compteur des images actuelles */}
       <p className="carousel-count">{currentSlide + 1}/{totalSlide}</p>
       </>
       )}
-      {/* Image de la diapositive actuelle */}
+      {/* Affichage de l'image actuelle */}
       <img className="carousel-image" src={sliderImage[currentSlide]} alt="logement" />
     </div>
   );

@@ -48,7 +48,7 @@ button {
     }
 }
 
-.rotate:hover{
+.rotate{
     animation: myrotate 1.5 ;
     scale: 1.1;
 }

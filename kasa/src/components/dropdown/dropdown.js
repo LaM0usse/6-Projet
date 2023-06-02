@@ -8,18 +8,28 @@ function Dropdown(props) {
     const click = () => {
         // document.getElementById("chevron").classList.add("rotate")
         setOpen(!open)
+        console.log(props.description)
     }
 
-    return(
+    return (
         <div className="dropdown">
             <button onClick={click}>{props.name}<i id="chevron" className={`fa-solid ${open ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i></button>
             {/* Contenu du déroulant s'il est ouvert */}
             {open && (
-                <div>
+            <div>
+                {Array.isArray(props.description) ? (
+                <ul>
+                    {props.description.map((item, index) => (
+                    <li key={index}>{item}</li>
+                    ))}
+                </ul>
+                ) : (
                 <p>{props.description}</p>
-                </div>
+                )}
+            </div>
             )}
         </div>
     )
 }
+
 export default Dropdown

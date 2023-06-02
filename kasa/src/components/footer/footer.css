@@ -1,14 +1,36 @@
 footer{
     background-color: black;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
     display: flex;
     text-align: center;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-top: 30px;
+    height: 180px;
 }
 
-footer p{
+.footer-content {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding-top: 50px;
+}
+
+.footer-content img {
+    width: 120px;
+}
+
+.footer-content p{
     font-size: 24px;
+}
+
+@media screen and (max-width:768px) {
+    footer {
+        height: 135px;
+    } 
+
+    .footer-content img {
+         width: 100px;
+    }
+
+    .footer-content p {
+        font-size: 12px;
+    }
 }

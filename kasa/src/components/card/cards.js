@@ -8,7 +8,7 @@ export default function Card() {
       <section className="cards">
         {/* Map du fichier data.json pour afficher tout les logements sous forme de carte */}
         {logementsData.map((logement) => (
-          <Link key={logement.id} to={`/logement/${logement.id}`}>
+          <Link className="card" key={logement.id} to={`/logement/${logement.id}`}>
           <div className="card-logement" >
             <img className="card-image" src={logement.cover} alt={logement.title} />
             <h2 className="card-title">{logement.title}</h2>

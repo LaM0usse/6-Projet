@@ -2,7 +2,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 0px;
+    padding: 40px 0px;
 }
 
 nav{
@@ -21,3 +21,34 @@ nav{
     text-decoration:underline;
 }
 
+@media screen and (max-width: 992px) {
+    nav {
+        gap: 40px;
+    }
+
+    .link-header {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width:768px){
+    header {
+        padding: 20px 0px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .link-header {
+        font-size: 13px;
+    }
+
+    .logo {
+        width: 130px;
+    }
+}

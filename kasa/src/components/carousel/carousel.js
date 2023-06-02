@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import './carousel.css'
 
 export default function Carousel({ sliderImage }) {
+  //Déclare une variable d'état currentSlide avec une valeur initiale de 0. 
   const [currentSlide, setCurrentSlide] = useState(0);
+  //Déclare une variable d'état totalSlide avec une valeur initiale égale à la longueur du tableau sliderImage
   const [totalSlide] = useState(sliderImage.length)
 
   //Modulo (%) permet de faire une boucle de la dernière à la première image

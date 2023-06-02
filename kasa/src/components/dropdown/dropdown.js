@@ -6,7 +6,6 @@ function Dropdown(props) {
     const [open, setOpen] = useState(false)
     // Fonction du clic sur le bouton du déroulant
     const click = () => {
-        // document.getElementById("chevron").classList.add("rotate")
         setOpen(!open)
         console.log(props.description)
     }

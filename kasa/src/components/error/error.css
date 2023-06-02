@@ -6,6 +6,11 @@
     padding: 160px 0px;
 }
 
+.error-image {
+    width: 100%;
+    max-width: 600px;
+}
+
 .error-text {
     font-size: 36px;
     color: #FF6060;
@@ -16,4 +21,34 @@
 .error-link {
     font-size: 18px;
     color: #FF6060;
+}
+
+@media screen and (max-width:992px) {
+    .error-image {
+        max-width: 350px;
+    }
+
+    .error-text {
+        display: flex;
+        text-align: center;
+        font-size: 24px;
+        padding-top: 30px;
+        padding-bottom: 135px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .error-image {
+        max-width: 250px;
+    }
+
+    .error-text {
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 120px;
+    }
+
+    .error-link {
+        font-size: 14px;
+    }
 }

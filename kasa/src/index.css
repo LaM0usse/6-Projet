@@ -4,11 +4,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 1240px;
+  max-width: 1240px;
   margin: auto;
+  padding: 0px 100px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media screen and (max-width:992px) {
+  body {
+    padding: 0px 50px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  body {
+    padding: 0px 20px;
+  }
 }

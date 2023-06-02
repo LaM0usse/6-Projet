@@ -26,9 +26,9 @@
     padding-top: 5px;
 }
 
-.logement-tags-section{
+.logement-tags-section {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     padding-top: 20px;
 }
 
@@ -46,7 +46,9 @@
 .logement-second-section {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
+    max-width: 252px;
+    width: 100%;
 }
 
 .logement-host {
@@ -68,7 +70,6 @@
     border-radius: 150px;
 }
 
-
 .stars {
     font-size: 24px;
     padding-left: 15px;
@@ -82,11 +83,9 @@
     color: #E3E3E3;
 }
 
-
-
 .logement-dropdown-section {
     display: flex;
-    justify-content: space-between;
+    gap: 80px;
     padding-bottom: 20px;
 }
 
@@ -94,7 +93,78 @@
     width: 580px;
 }
 
-.logement-dropdown p {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width:992px) {
+    .logement-host-name {
+        font-size: 15px;
+    }
+
+    .stars {
+        font-size: 17px;
+    }
+
+    .logement-tags {
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .logement-host-picture {
+        width: 64px;
+    }
+
+    .logement-title {
+        font-size: 26px;
+    }
+
+    .logement-location {
+        font-size: 16px;
+    }
+
+    .logement-dropdown-section {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .logement-info {
+        flex-direction: column;
+    }
+
+    .logement-second-section {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        max-width: 1000px;
+    }
+
+    .logement-host-name {
+        font-size: 15px;
+    }
+
+    .stars {
+        font-size: 17px;
+        padding-right: 15px;
+        padding-left: 0px;
+    }
+
+    .logement-tags {
+        font-size: 9.9px;
+        padding: 5px;
+        border-radius: 8px;
+    }
+
+    .logement-host-picture {
+        width: 50px;
+    }
+
+    .logement-title {
+        font-size: 26px;
+    }
+
+    .logement-location {
+        font-size: 18px;
+    }
+
+    .logement-dropdown-section {
+        gap: 0px;
+    }
 }

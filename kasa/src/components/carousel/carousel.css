@@ -1,9 +1,12 @@
 .carousel {
-    position: relative;
+    position: relative;    
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .carousel-image {
-    width: 1240px;
+    width: 100%;
     height: 500px;
     border-radius: 25px;
     object-fit: cover;
@@ -30,9 +33,52 @@
 
 .carousel-count {
     position: absolute;
-    left: 620px;
-    top: 440px;
+
     color: white;
     font-size: 18px;
     font-family: 'Montserrat';
+}
+
+@media screen and (max-width:992px) {
+    .carousel-count {
+        display: none;
+    }
+
+    .carousel-image {
+        height: 255px;
+    }
+
+    .carousel-arrowleft {
+        font-size: 20px;
+        top: 120px;
+        left: 15px;
+    }
+
+    .carousel-arrowright {
+        font-size: 20px;
+        top: 120px;
+        right: 15px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .carousel-count {
+        display: none;
+    }
+
+    .carousel-image {
+        height: 255px;
+    }
+
+    .carousel-arrowleft {
+        font-size: 20px;
+        top: 120px;
+        left: 15px;
+    }
+
+    .carousel-arrowright {
+        font-size: 20px;
+        top: 120px;
+        right: 15px;
+    }
 }

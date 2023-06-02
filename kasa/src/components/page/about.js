@@ -9,7 +9,7 @@ export default function App() {
     return(
         <>
         <Header />
-        <Banner URL="./image/banner2.png"/>
+        <Banner URL="./image/banner2.png" largeHeight="true"/>
         <div className="about">
             {/* Map du fichier Dataabout.json pour afficher chaque élément des déroulants */}
             {Dataabout.map((data) => {
